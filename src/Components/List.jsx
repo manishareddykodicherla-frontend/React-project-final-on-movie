@@ -1,4 +1,5 @@
-export default function List({ movies, loading }) {
+import React from "react";
+export default function List({ movies=[], loading }) {
   return (
     <div key={movies}>
       <div className="movie__lists">

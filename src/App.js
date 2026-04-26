@@ -1,3 +1,6 @@
+import logo from './logo.svg';
+import './App.css';
+
 import "./App.css";
 import Nav from "./Components/Nav";
 import List from "./Components/List";
@@ -5,6 +8,7 @@ import Filter from "./Components/Filter";
 import Input from "./Components/Input";
 import { useState } from "react";
 import axios from "axios";
+  
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
@@ -52,5 +56,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
