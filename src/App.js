@@ -6,24 +6,27 @@ import Nav from "./Components/Nav";
 import List from "./Components/List";
 import Filter from "./Components/Filter";
 import Input from "./Components/Input";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
+import Footer from './Components/Footer';
+
   
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  async function searchMovies() {
-    setLoading(true);
-    const res = await axios.get(
-      `https://www.omdbapi.com/?apikey=3608d43&s=${searchTerm}`
-    );
-    const { Search: data } = res.data;
-    setMovies(data);
-    console.log(data);
-    setLoading(false);
-  }
+  
+    async function searchMovies(term = searchTerm ) {
+  setLoading(true);
+  const res = await axios.get(`https://www.omdbapi.com/?apikey=3608d43&s=${term}`);
+  setMovies(res.data.Search || []);
+  setLoading(false);
+}
+
+useEffect(() => {
+  searchMovies("batman");
+}, []);
   function filterMovies(sortValue) {
     if (sortValue === "movie_title") {
       const sortedMovies = [...movies].sort((a, b) =>
@@ -53,6 +56,7 @@ function App() {
       <Input setSearchTerm={setSearchTerm} searchMovies={searchMovies} />
       <Filter filterMovies={filterMovies} movies={movies} />
       <List movies={movies} loading={loading} />
+      <Footer/>
     </div>
   );
 }

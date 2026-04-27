@@ -22,7 +22,7 @@ export default function List({ movies=[], loading }) {
               <h4 className="Year">{movie.Year}</h4>
               <h4 className="imdb">{movie.imdbID}</h4>
             </div>
-          ))
+          )).slice(0,10)
         )}
       </div>
     </div>
