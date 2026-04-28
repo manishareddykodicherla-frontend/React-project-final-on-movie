@@ -1,5 +1,4 @@
 import React from "react";
-import List from "../Components/List";
 export default function Filter({ movies, filterMovies }) {
   return (
     <div>
