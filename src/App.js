@@ -3,7 +3,7 @@ import Nav from "./Components/Nav";
 import List from "./Components/List";
 import Filter from "./Components/Filter";
 import Input from "./Components/Input";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import Footer from './Components/Footer';
 
@@ -14,16 +14,16 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   
-    async function searchMovies(term = searchTerm ) {
-  setLoading(true);
-  const res = await axios.get(`https://www.omdbapi.com/?apikey=3608d43&s=${term}`);
-  setMovies(res.data.Search || []);
-  setLoading(false);
-}
+  const searchMovies = useCallback(async (term = searchTerm) => {
+    setLoading(true);
+    const res = await axios.get(`https://www.omdbapi.com/?apikey=3608d43&s=${term}`);
+    setMovies(res.data.Search || []);
+    setLoading(false);
+  }, [searchTerm]);
 
-useEffect(() => {
-  searchMovies();
-}, [searchMovies]);
+  useEffect(() => {
+    searchMovies();
+  }, [searchMovies]);
 
   function filterMovies(sortValue) {
     if (sortValue === "movie_title") {
