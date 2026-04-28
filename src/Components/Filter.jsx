@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function Filter({ movies, filterMovies }) {
   return (
     <div>
@@ -7,7 +8,7 @@ export default function Filter({ movies, filterMovies }) {
           className="movieFilter"
           onChange={(e) => filterMovies(e.target.value)}
         >
-          <option defaultValue="sort" selected value={""}>
+         <option value="">
             sort
           </option>
           <option value="MOVIE__YEAR__NEW__TO_OLD">

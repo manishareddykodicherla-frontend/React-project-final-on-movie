@@ -23,7 +23,8 @@ function App() {
 
 useEffect(() => {
   searchMovies();
-}, [searchMovies]);
+}, []);
+
   function filterMovies(sortValue) {
     if (sortValue === "movie_title") {
       const sortedMovies = [...movies].sort((a, b) =>
