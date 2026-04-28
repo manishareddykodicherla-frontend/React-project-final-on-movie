@@ -12,3 +12,4 @@ export default function Input({ setSearchTerm, searchMovies }) {
       </div>
     </div>
   );
+}
