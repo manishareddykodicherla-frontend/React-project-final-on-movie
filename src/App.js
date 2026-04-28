@@ -1,7 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-
-import "./App.css";
 import Nav from "./Components/Nav";
 import List from "./Components/List";
 import Filter from "./Components/Filter";
