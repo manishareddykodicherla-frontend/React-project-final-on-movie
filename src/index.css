@@ -23,6 +23,14 @@ body {
     font-size: 28px;
     margin-top:10px;
 }
+.btn-search{
+    position:absolute;
+    top: 20px;
+    right: 90px;;
+}
+.searchingMovie{
+    position: relative;
+}
 nav{
     display:flex;
     padding: 40px;

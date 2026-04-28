@@ -8,7 +8,7 @@ export default function Input({ setSearchTerm, searchMovies }) {
           className="searchingMovie"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={searchMovies}>Search</button>
+        <button onClick={searchMovies} className="btn-search">Search</button>
       </div>
     </div>
   );
