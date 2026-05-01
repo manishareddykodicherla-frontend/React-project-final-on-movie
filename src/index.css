@@ -26,7 +26,8 @@ body {
 .btn-search{
     position:absolute;
     top: 20px;
-    right: 90px;;
+    right: 90px;
+    color: green;
 }
 .searchingMovie{
     position: relative;
