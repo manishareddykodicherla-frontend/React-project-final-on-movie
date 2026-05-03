@@ -118,3 +118,32 @@ footer{
         transform:rotate(360deg);
     }
 }
+@media (max-width:768px) {
+    nav{
+        width: 768px;
+      overflow-x: hidden;
+    }
+.btn-search{
+    position: absolute;
+    top:35px;
+    right:-40px;
+
+}
+.search{
+    position: relative;
+}
+.filter{
+    margin:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
