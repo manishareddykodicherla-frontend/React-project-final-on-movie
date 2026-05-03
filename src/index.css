@@ -135,15 +135,22 @@ footer{
 .filter{
     margin:20px;
 }
+}
+@media (max-width:540px) {
+    nav{
+        width: 540px;
+      overflow-x: hidden;
+    }
+.btn-search{
+    position: absolute;
+    top:35px;
+    right:-20px;
 
-
-
-
-
-
-
-
-
-
-
+}
+.search{
+    position: relative;
+}
+.filter{
+    margin:20px;
+}
 }
