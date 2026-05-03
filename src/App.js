@@ -57,20 +57,18 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
+         <Route path="/movies" element={<Review />} />
         <Route
           path="/"
           element={
             <>
-              <Input
-                setSearchTerm={setSearchTerm}
-                searchMovies={searchMovies}
-              />
+              <Input setSearchTerm={setSearchTerm} searchMovies={searchMovies} />
               <Filter filterMovies={filterMovies} movies={movies} />
               <List movies={movies} loading={loading} />
             </>
              }
         />
-        <Route path="/movies" element={<Review />} />
+    
       </Routes>
       <Footer />
     </div>
