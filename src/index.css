@@ -113,8 +113,9 @@ animation: moving 500ms linear infinite;
 .row{
     display:flex;
 }
-footer{
-    background-color: rgb(194, 214, 161);
+.footer{
+    background-color: rgb(53, 28, 122);
+    width:100%;
 }
 .footer__para{
     text-align: center;
@@ -164,6 +165,11 @@ footer{
 }
 .search{
     position: relative;
+}
+.footer{
+    width:auto;
+    text-align: center;
+    margin-left :60px;
 }
 @media (max-width:540px) {
     .nav__container{

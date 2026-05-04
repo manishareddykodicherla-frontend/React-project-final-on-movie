@@ -12,12 +12,12 @@ export default function Filter({ movies, filterMovies }) {
             sort
           </option>
           <option value="MOVIE__YEAR__NEW__TO_OLD">
-            movie year, new__to__old
+            Movie , Newest to Oldest
           </option>
           <option value="MOVIE__YEAR__OLD__TO_NEW">
-            movie year, old__to__new
+            Movie , Oldest to Newest 
           </option>
-          <option value="movie_title">movie Name</option>
+          <option value="movie_title">Movie Name</option>
         </select>
       </div>
     </div>
