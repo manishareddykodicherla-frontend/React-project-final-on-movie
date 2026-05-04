@@ -139,11 +139,7 @@ animation: moving 500ms linear infinite;
 
 
 @media (max-width:540px) {
-    .nav__container{
-        width: 540px;
-      
-    }
-
+   
 .search{
     display:flex;
     justify-content: space-around;
