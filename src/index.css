@@ -197,7 +197,12 @@ animation: moving 500ms linear infinite;
     max-width: 100%;
     box-sizing: border-box;
   }
-
+.nav__list{
+    display:none;
+}
+.nav__lists--open { 
+    display: flex; 
+}
 }
 
 
