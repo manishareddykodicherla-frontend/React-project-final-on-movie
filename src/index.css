@@ -78,7 +78,7 @@ margin-top:80px;
     left:180px;
     margin: 20px;
     padding:10px;
-}
+} 
 .movie__list{
     border: 5px solid aliceblue;
     border-radius:10px;
@@ -132,45 +132,12 @@ animation: moving 500ms linear infinite;
     }
 }
 
- @media (max-width: 768px) {
-  nav { 
-    width: 768px;
-     align-items: center; 
-     justify-content: space-between; 
-     margin:20px;
-    }
-  .burger {
-     display: block; 
-    }
-  .nav__lists { 
-    display: none; 
-    position: absolute;
-     top: 100px; 
-     right: 20px;
-      background-color: rgb(191, 191, 161);
-       flex-direction: column;
-        padding: 20px; }
-  .nav__lists--open { 
-    display: flex; 
-}
-  .nav__list { 
-    font-size: 22px;
-     padding: 12px; }
-}  
+ 
 
-.btn-search{
-    position: absolute;
-    top:35px;
-    right:-20px;
-}
-.search{
-    position: relative;
-}
-.footer{
-    width:auto;
-    text-align: center;
-    margin-left :60px;
-}
+
+
+
+
 @media (max-width:540px) {
     .nav__container{
         width: 540px;
