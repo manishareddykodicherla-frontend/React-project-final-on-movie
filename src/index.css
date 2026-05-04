@@ -198,8 +198,17 @@ animation: moving 500ms linear infinite;
     box-sizing: border-box;
   }
 .nav__list{
-    display:none;
+
+    display:block;
 }
+.nav__lists {
+     display: none;
+      position: absolute; 
+      top: 100px; 
+      right: 20px;
+       background-color: rgb(220, 220, 207); 
+       flex-direction: column; 
+       padding: 20px; }
 .nav__lists--open { 
     display: flex; 
 }
