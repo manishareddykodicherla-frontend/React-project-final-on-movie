@@ -4,7 +4,7 @@ export default function Review() {
   return (
     <div>
         <div className="review">
-            <p>this is page is created just for testing purpose and will be upadted later.</p>
+            <p className="review__para">this is page is created just for testing purpose and will be upadted later.</p>
         </div>
     </div>
   )

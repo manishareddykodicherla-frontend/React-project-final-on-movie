@@ -17,6 +17,12 @@ body {
 
   
 }
+.review__para{
+    font: size 28px;
+    border-radius: 50px;
+    padding:20px;
+    margin:20px;
+}
 .nav__list{
     padding:20px;
     color: rgb(136, 90, 90);
@@ -26,7 +32,7 @@ body {
 .btn-search{
     position:absolute;
     top: 20px;
-    right: 90px;
+    right: 50px;
     color: green;
 }
 .searchingMovie{
@@ -108,7 +114,7 @@ animation: moving 500ms linear infinite;
     display:flex;
 }
 footer{
-    background-color: rgb(225, 235, 232);
+    background-color: rgb(194, 214, 161);
 }
 .footer__para{
     text-align: center;
@@ -133,7 +139,8 @@ footer{
      margin:20px;
     }
   .burger {
-     display: block; }
+     display: block; 
+    }
   .nav__lists { 
     display: none; 
     position: absolute;
@@ -163,16 +170,16 @@ footer{
         width: 540px;
       
     }
-.btn-search{
-    position: absolute;
-    top:35px;
-    right:-20px;
 
-}
 .search{
-    position: relative;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 .filter{
     margin:10px;
+}
+.burger{
+    display:block;
 }
 }
